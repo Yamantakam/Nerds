@@ -1,0 +1,77 @@
+.catalog{
+  margin-bottom: 80px;
+  font-size: 0;
+}
+
+.catalog__sort{
+  margin-bottom: 20px;
+}
+
+.catalog__sort-item{
+  .def-ib(middle);
+  margin-right: 45px;
+  padding-top: 5px;
+  color: @secondaryColor;
+  .font(short; 12px; 18px);
+  text-transform: uppercase;
+  &:first-child{
+    margin-right: 40px;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  &--longmarg{
+    margin-right: 90px;
+  }
+  &--shortmarg{
+    margin-right: 5px;
+  }
+}
+
+.catalog__link{
+  display: block;
+  border-bottom: 1px dotted @green;
+  opacity: 0.3;
+  transition-duration: 500ms;
+  transition-property: opacity, background, border;
+  &:hover{
+    border-bottom: 1px solid @green;
+    opacity: 1;
+  }
+  &:active{
+    border-color: transparent;
+  }
+  &--low, &--high{
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  &--low{
+    border-top: 10px solid @green;
+    border-bottom: none;
+  }
+  &--high{
+    border-bottom: 10px solid #b5b5b5;
+  }
+  &--low:hover{
+    border-bottom: none;
+  }
+  &--high:hover{
+    border-bottom: 10px solid #b5b5b5;
+  }
+  &--low:active{
+    border-top: 10px solid #000;
+  }
+  &--high:active{
+    border-bottom: 10px solid #000;
+  }
+}
+
+.catalog__item{
+  margin-right: 80px;
+  margin-bottom: 80px;
+  &:nth-child(2n){
+    margin-right: 0;
+  }
+}

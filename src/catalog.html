@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Yamantakam, HTML Academy, Nerds, NЁRDS DESIGN STUDIO,
+  студия, клиенты, магазин, макеты, макет, стоимость сайта, сетка, адаптивная,
+  фиксированная, резиновая, интернет-магазин">
+  <meta name="description" content="Мы &ndash; маленькая, но гордая дизайн-студия из Краснодара.">
+  <meta name="author" content="https://github.com/Yamantakam">
+  <meta name="viewport" content="width=900">
+  <title>Nerds</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo.png" width="139" height="56" alt="Nerds">
+      </a>
+      <div class="page-header__nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="index.html">Студия</a></li>
+            <li class="nav__item"><a href="index.html#clients">Клиенты</a></li>
+            <li class="nav__item  nav__item--active"><a>Магазин</a></li>
+            <li class="nav__item"><a href="#map">Контакты</a></li>
+            <li class="nav__item  nav__item--cart"><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-header__title">Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+  </header>
+
+
+
+
+
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <div class="page-main__column  page-main__column--left">
+        <aside class="filter">
+          <form class="filter__form" action="#" method="post">
+            <fieldset class="filter__group">
+              <legend class="filter__title">Стоимость:</legend>
+              <div class="filter__range">
+                <div class="filter__scale">
+                  <div class="filter__bar"></div>
+                </div>
+                <div class="filter__toggle  filter__toggle--min"></div>
+                <div class="filter__toggle  filter__toggle--max"></div>
+              </div>
+              <div class="filter__price-fields">
+                от <input class="filter__field  filter__field--min" type="text" name="field-min" value="0">
+                до <input class="filter__field  filter__field--max" type="text" name="field-max" value="15 000">
+              </div>
+            </fieldset>
+
+
+            <fieldset class="filter__group">
+              <legend class="filter__title">Сетка:</legend>
+              <input class="filter__item" type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <label class="filter__label  filter__label--radio" for="adaptive">Адаптивная</label>
+
+              <input class="filter__item" type="radio" name="grid" id="fixed" value="fixed">
+              <label class="filter__label  filter__label--radio" for="fixed">Фиксированная</label>
+
+              <input class="filter__item" type="radio" name="grid" id="rubber" value="rubber">
+              <label class="filter__label  filter__label--radio" for="rubber">Резиновая</label>
+            </fieldset>
+
+
+            <fieldset class="filter__group">
+              <legend class="filter__title">Особенности:</legend>
+              <input class="filter__item" type="checkbox" name="slider" id="slider" checked>
+              <label class="filter__label  filter__label--checkbox" for="slider">Слайдер</label>
+
+              <input class="filter__item" type="checkbox" name="features" id="features">
+              <label class="filter__label  filter__label--checkbox" for="features">Блок преимуществ</label>
+
+              <input class="filter__item" type="checkbox" name="news" id="news" checked>
+              <label class="filter__label  filter__label--checkbox" for="news">Новости</label>
+
+              <input class="filter__item" type="checkbox" name="gallery" id="gallery">
+              <label class="filter__label  filter__label--checkbox" for="gallery">Галерея</label>
+
+              <input class="filter__item" type="checkbox" name="cart" id="cart">
+              <label class="filter__label  filter__label--checkbox" for="cart">Корзина</label>
+            </fieldset>
+            <button class="filter__btn  btn  btn--gray" type="submit">Показать</button>
+          </form>
+        </aside>
+      </div>
+
+
+
+      <div class="page-main__column  page-main__column--right">
+        <section class="catalog">
+          <h2 class="visually-hidden">Наши работы</h2>
+          <ul class="catalog__sort">
+            <li class="catalog__sort-item">
+              Сортировать:
+            </li>
+            <li class="catalog__sort-item">
+              <a class="catalog__link" href="#">По цене</a>
+            </li>
+            <li class="catalog__sort-item">
+              <a class="catalog__link" href="#">По типу</a>
+            </li>
+            <li class="catalog__sort-item  catalog__sort-item--longmarg">
+              <a class="catalog__link" href="#">По функционалу</a>
+            </li>
+            <li class="catalog__sort-item  catalog__sort-item--shortmarg">
+              <a class="catalog__link  catalog__link--low" href="#"></a>
+            </li>
+            <li class="catalog__sort-item">
+              <a class="catalog__link  catalog__link--high" href="#"></a>
+            </li>
+          </ul>
+
+
+          <article class="catalog__item  product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#">1</a>
+              <a class="product__item-toggle" href="#">2</a>
+              <a class="product__item-toggle" href="#">3</a>
+            </div>
+            <img class="product__img" src="img/product-1.jpg" width="240" height="240" alt="Aviator">
+            <section class="product__description">
+              <h3 class="product__title">Aviator</h3>
+              <p class="product__descr">Одностраничный макет с авторским дизайном</p>
+              <button class="product__btn  btn">8000 Р.</button>
+            </section>
+          </article>
+
+          <article class="catalog__item  product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#">1</a>
+              <a class="product__item-toggle" href="#">2</a>
+              <a class="product__item-toggle" href="#">3</a>
+            </div>
+            <img class="product__img" src="img/product-2.jpg" width="240" height="240" alt="Sunset">
+            <section class="product__description">
+              <h3 class="product__title">Sunset</h3>
+              <p class="product__descr">Интернет-магазин с&nbsp;личным кабинетом</p>
+              <button class="product__btn  btn">10000 Р.</button>
+            </section>
+          </article>
+
+          <article class="catalog__item  product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#">1</a>
+              <a class="product__item-toggle" href="#">2</a>
+              <a class="product__item-toggle" href="#">3</a>
+            </div>
+            <img class="product__img" src="img/product-3.jpg" width="240" height="240" alt="Forte">
+            <section class="product__description">
+              <h3 class="product__title">Forte</h3>
+              <p class="product__descr">Отличный макет для личного блога</p>
+              <button class="product__btn  btn">5000 Р.</button>
+            </section>
+          </article>
+
+          <article class="catalog__item  product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#">1</a>
+              <a class="product__item-toggle" href="#">2</a>
+              <a class="product__item-toggle" href="#">3</a>
+            </div>
+            <img class="product__img" src="img/product-4.jpg" width="240" height="240" alt="Modern">
+            <section class="product__description">
+              <h3 class="product__title">Modern Organic Thai</h3>
+              <p class="product__descr">Сайт для ресторана быстрого питания</p>
+              <button class="product__btn  btn">12000 Р.</button>
+            </section>
+          </article>
+
+          <article class="catalog__item  product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#">1</a>
+              <a class="product__item-toggle" href="#">2</a>
+              <a class="product__item-toggle" href="#">3</a>
+            </div>
+            <img class="product__img" src="img/product-6.jpg" width="240" height="240" alt="Dovetail">
+            <section class="product__description">
+              <h3 class="product__title">Dovetail</h3>
+              <p class="product__descr">Интернет-магазин с галереей товаров</p>
+              <button class="product__btn  btn">14000 Р.</button>
+            </section>
+          </article>
+
+          <article class="catalog__item  product">
+            <h2 class="visually-hidden">Макет</h2>
+            <div class="product__item-toggles">
+              <a class="product__item-toggle" href="#">1</a>
+              <a class="product__item-toggle" href="#">2</a>
+              <a class="product__item-toggle" href="#">3</a>
+            </div>
+            <img class="product__img" src="img/product-5.jpg" width="240" height="240" alt="Avenue">
+            <section class="product__description">
+              <h3 class="product__title">Avenue</h3>
+              <p class="product__descr">Макет для блога о путешествиях</p>
+              <button class="product__btn  btn">8000 Р.</button>
+            </section>
+          </article>
+
+
+
+          <div class="paginator">
+            <a class="paginator__link  paginator__link--active  btn  btn--gray" href="#">1</a>
+            <a class="paginator__link  btn  btn--gray" href="#">2</a>
+            <a class="paginator__link  btn  btn--gray" href="#">3</a>
+            <a class="paginator__link  paginator__link--next  btn  btn--gray" href="#">Следующая</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+  <footer class="page-footer">
+    <section class="map">
+      <div class="map__api" id="map"></div>
+      <div class="map__wrapper">
+        <div class="map__writeus">
+          <h5 class="map__title">NЁRDS DESIGN STUDIO</h5>
+          <p class="map__descr">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
+          <p class="map__descr">тел: +7 (812) 275-75-75</p>
+          <a class="map__btn  btn  btn--popup" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="page-footer__wrapper">
+      <section class="page-footer__social  social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <a class="social__btn  social__btn--vk  btn" href="#">Vkontakte</a>
+        <a class="social__btn  social__btn--fb  btn" href="#">Facebook</a>
+        <a class="social__btn  social__btn--inst  btn" href="#">Instagram</a>
+      </section>
+
+
+      <section class="page-footer__promo">
+        <h5 class="page-footer__title">Давайте дружить, это выгодно!</h5>
+        <p class="page-footer__text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+
+
+
+
+
+  <div class="popup">
+    <button class="popup__btn  popup__btn--close  btn  btn--close" type="button">Закрыть</button>
+    <form class="popup__form" action="#" method="post">
+      <div class="popup__group  popup__group--name">
+        <label class="popup__label" for="name">Ваше имя:</label>
+        <input class="popup__field" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+      </div>
+
+      <div class="popup__group  popup__group--email">
+        <label class="popup__label" for="email">Ваш e-mail:</label>
+        <input class="popup__field" type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </div>
+
+      <div class="popup__group  popup__group--message">
+        <label class="popup__label" for="message">Текст письма:</label>
+        <textarea class="popup__field  popup__field--message" name="message" id="message"
+        placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="popup__btn  popup__btn--send  btn" type="submit">Отправить</button>
+    </form>
+  </div>
+  <script src="js/main.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeSGVFYxJS5oY61DksVooEzgj_jdE-ItE&callback=initMap"
+  async defer></script>
+</body>
+</html>
