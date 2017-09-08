@@ -139,7 +139,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  min-width: 320px;
+  min-width: 900px;
   background: #fff;
   color: #283136;
   font-size: 16px;
@@ -396,16 +396,6 @@ sub {
   text-transform: uppercase;
   transition: opacity 0.3s;
 }
-.popup__field::-moz-placeholder {
-  color: #000;
-  font-size: 12px;
-  line-height: 18px;
-  font-family: "Roboto", Arial, sans-serif;
-  font-weight: 500;
-  opacity: 1;
-  text-transform: uppercase;
-  transition: opacity 0.3s;
-}
 .popup__field:-ms-input-placeholder {
   color: #000;
   font-size: 12px;
@@ -427,9 +417,6 @@ sub {
   transition: opacity 0.3s;
 }
 .popup__field:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-.popup__field:focus::-moz-placeholder {
   opacity: 0;
 }
 .popup__field:focus:-ms-input-placeholder {
